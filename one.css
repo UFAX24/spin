@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,300;1,100&display=swap');
-@import '/UFAXCSS/animate.css';
+@import 'UFAXCSS/animate.css';
 /* 
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) { 
     html { 
@@ -69,7 +69,7 @@
       border-radius: 1000px;
       overflow: hidden;
       transition: transform 4s ease-in-out;
-      background-image: url('../images/spin/wheel.png');
+      background-image: url('images/spin/wheel.png');
     
       &.freeze {
         transition: none;
@@ -129,7 +129,7 @@
       color: #D5AD6D;
       margin-top: 60%;
       margin-left: 180%;
-      background-image: url('/images/button/5.png');
+      background-image: url('images/button/5.png');
       background-position: center;
       background-size: cover;
   }
@@ -151,7 +151,7 @@
       color: #000000;
       margin-top: 0%;
       margin-left: 180%;
-      background-image: url('/images/button/userinput.png');
+      background-image: url('images/button/userinput.png');
       background-position: center;
       background-size: cover;
   }
@@ -252,7 +252,7 @@
       border-radius: 1000px;
       overflow: hidden;
       transition: transform 4s ease-in-out;
-      background-image: url('../images/spin/wheel.png');
+      background-image: url('images/spin/wheel.png');
     
       &.freeze {
         transition: none;
@@ -323,7 +323,7 @@
       color: #D5AD6D;
       margin-top: 400%;
       margin-left: 80%;
-      background-image: url('/images/button/5.png');
+      background-image: url('images/button/5.png');
       background-position: center;
       background-size: cover;
   }
@@ -345,7 +345,7 @@
       color: #000000;
       margin-top: 0%;
       margin-left: 80%;
-      background-image: url('/images/button/userinput.png');
+      background-image: url('images/button/userinput.png');
       background-position: center;
       background-size: cover;
   }
