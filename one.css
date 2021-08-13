@@ -1,0 +1,388 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,300;1,100&display=swap');
+@import '/UFAXCSS/animate.css';
+/* 
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) { 
+    html { 
+      transform: rotate(-90deg); 
+      transform-origin: left top;
+      width: 100vh; 
+      overflow-x: hidden; 
+      position: absolute; 
+      top: 100%; 
+      left: 0; 
+    }
+  } */
+
+  @media (orientation: landscape) {
+    body {
+     
+    background-image: url('images/login/pc_sp.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    }
+    .wheel-wrapper {
+      width: 680px;
+      height: 680px;
+      position: absolute;
+      top: 35%;
+      left: 29%;
+      transform: translate(-50%, -50%);
+    }
+    
+    .wheel-pointer {
+      width: 120px;
+      height: 120px;
+      margin-top: 30%;
+      border-radius: 1000px;
+      
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      line-height: 60px;
+      z-index: 10;
+      cursor: pointer;
+    
+      &::after {
+        content: "";
+        position: absolute;
+        top: -32px;
+        left: 30%;
+        border-width: 0 8px 40px;
+        border-style: solid;
+        border-color: transparent transparent yellow;
+        transform: translateX(-50%);
+      }
+    }
+  
+    .wheel-pointer:hover {
+      box-shadow: 0px 0px 10px 4px #fa513e;
+  }
+  
+    .wheel-bg {
+      width: 100%;
+      height: 100%;
+      margin-top: 30%;
+      border-radius: 1000px;
+      overflow: hidden;
+      transition: transform 4s ease-in-out;
+      background-image: url('../images/spin/wheel.png');
+    
+      &.freeze {
+        transition: none;
+        background: red;
+      }
+    }
+    
+    .wheel-frame {
+      width: 145%;
+      height: 145%;
+      position: absolute;
+      margin-top: -123%;
+      margin-left: -23%;
+    }
+    
+  
+    
+    .prize-list {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      text-align: center;
+      opacity: 0%;
+    }
+    
+    .prize-item-wrapper {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 340px;
+      height: 340px;
+      opacity: 0%;
+    }
+    .prize-item {
+      width: 100%;
+      height: 100%;
+      opacity: 0%;
+      transform-origin: bottom;
+      .prize-name {
+        padding: 16px 0;
+      }
+      .prize-icon {}
+    }
+    
+    .displaySpin {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 500px;
+      height: 205px;
+      border: 1px solid rgb(230, 189, 10);
+      border-radius: 5px;
+      text-align: center;
+      font-family: 'Kanit', sans-serif;
+      font-size: 4rem;
+      color: #D5AD6D;
+      margin-top: 60%;
+      margin-left: 180%;
+      background-image: url('/images/button/5.png');
+      background-position: center;
+      background-size: cover;
+  }
+  .displaySpin:hover {
+      box-shadow: 0px 0px 10px 4px #fa513e;
+  }
+  
+  .displayUser {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 495px;
+      height: 100px;
+      border: 1px solid rgb(216, 213, 34);
+      border-radius: 5px;
+      text-align: center;
+      font-family: 'Kanit', sans-serif;
+      font-size: 2rem;
+      color: #000000;
+      margin-top: 0%;
+      margin-left: 180%;
+      background-image: url('/images/button/userinput.png');
+      background-position: center;
+      background-size: cover;
+  }
+  
+  .SpinLogo {
+      position: absolute;
+      width: 650px;
+      margin-top: -38%;
+      margin-left: 55%;
+      animation: pulse 5s alternate infinite;
+  }
+  
+  .SpinLogo:hover {
+      animation: heartBeat 2s alternate infinite;
+  }
+  
+  .goldtextcss {
+      color: #D5AD6D;
+      background: -webkit-linear-gradient(transparent, transparent),
+          -webkit-linear-gradient(top, rgba(213, 173, 109, 1) 0%, rgba(213, 173, 109, 1) 26%, rgba(226, 186, 120, 1) 35%, rgba(163, 126, 67, 1) 45%, rgba(145, 112, 59, 1) 61%, rgba(213, 173, 109, 1) 100%);
+      background: -o-linear-gradient(transparent, transparent);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+  
+  .blur {
+      animation: blur 10s;
+  }
+  
+  @keyframes blur {
+      0% {
+          filter: blur(1.5px);
+      }
+  
+      80% {
+          filter: blur(1.5px);
+      }
+  
+      100% {
+          filter: blur(0px);
+      }
+  }
+  }
+  
+  @media (orientation: portrait) {
+    body {
+     
+      background-image: url('login/assets/login/mb_sp.jpg');
+      background-size: 1080px 1920px;
+      background-repeat: no-repeat;
+      display: block;
+    }
+    .wheel-wrapper {
+      width: 680px;
+      height: 680px;
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      
+    }
+    
+    .wheel-pointer {
+      width: 120px;
+      height: 120px;
+      margin-top: 30%;
+      border-radius: 1000px;
+      
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      line-height: 60px;
+      z-index: 10;
+      cursor: pointer;
+    
+      &::after {
+        content: "";
+        position: absolute;
+        top: -32px;
+        left: 30%;
+        border-width: 0 8px 40px;
+        border-style: solid;
+        border-color: transparent transparent yellow;
+        transform: translateX(-50%);
+      }
+    }
+  
+    .wheel-pointer:hover {
+      box-shadow: 0px 0px 10px 4px #fa513e;
+  }
+  
+    .wheel-bg {
+      width: 100%;
+      height: 100%;
+      margin-top: 30%;
+      border-radius: 1000px;
+      overflow: hidden;
+      transition: transform 4s ease-in-out;
+      background-image: url('../images/spin/wheel.png');
+    
+      &.freeze {
+        transition: none;
+        background: red;
+      }
+    }
+    
+    .wheel-frame {
+      width: 145%;
+      height: 145%;
+      position: absolute;
+      margin-top: -123%;
+      margin-left: -23%;
+    }
+    
+  
+    
+    .prize-list {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      text-align: center;
+      opacity: 0%;
+    }
+    
+    .prize-item-wrapper {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 340px;
+      height: 340px;
+      opacity: 0%;
+    }
+    .prize-item {
+      width: 100%;
+      height: 100%;
+      opacity: 0%;
+      transform-origin: bottom;
+      .prize-name {
+        padding: 16px 0;
+      }
+      .prize-icon {}
+    }
+    .SpinLogo {
+      position: absolute;
+      width: 700px;
+      margin-top: -150%;
+      margin-left: 15%;
+      animation: pulse 5s alternate infinite;
+  }
+  
+  .SpinLogo:hover {
+      animation: heartBeat 2s alternate infinite;
+  }
+  
+    .displaySpin {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 500px;
+      height: 205px;
+      border: 1px solid rgb(230, 189, 10);
+      border-radius: 5px;
+      text-align: center;
+      font-family: 'Kanit', sans-serif;
+      font-size: 4rem;
+      color: #D5AD6D;
+      margin-top: 400%;
+      margin-left: 80%;
+      background-image: url('/images/button/5.png');
+      background-position: center;
+      background-size: cover;
+  }
+  .displaySpin:hover {
+      box-shadow: 0px 0px 10px 4px #fa513e;
+  }
+  
+  .displayUser {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 495px;
+      height: 100px;
+      border: 1px solid rgb(216, 213, 34);
+      border-radius: 5px;
+      text-align: center;
+      font-family: 'Kanit', sans-serif;
+      font-size: 2rem;
+      color: #000000;
+      margin-top: 0%;
+      margin-left: 80%;
+      background-image: url('/images/button/userinput.png');
+      background-position: center;
+      background-size: cover;
+  }
+  
+
+  .goldtextcss {
+      color: #D5AD6D;
+      background: -webkit-linear-gradient(transparent, transparent),
+          -webkit-linear-gradient(top, rgba(213, 173, 109, 1) 0%, rgba(213, 173, 109, 1) 26%, rgba(226, 186, 120, 1) 35%, rgba(163, 126, 67, 1) 45%, rgba(145, 112, 59, 1) 61%, rgba(213, 173, 109, 1) 100%);
+      background: -o-linear-gradient(transparent, transparent);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+  
+  .blur {
+      animation: blur 10s;
+  }
+  
+  @keyframes blur {
+      0% {
+          filter: blur(1.5px);
+      }
+  
+      80% {
+          filter: blur(1.5px);
+      }
+  
+      100% {
+          filter: blur(0px);
+      }
+  }
+  
+  }
+
+/* body {
+    background-image: url('images/login/pc_sp.jpg');
+    background-repeat: no-repeat;
+} */
+
+

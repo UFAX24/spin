@@ -1,0 +1,801 @@
+@import './animate.css';
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 319px) and (max-device-width : 480px) {
+    body {
+        background-image: url('../images/login/bgmb.jpg');
+        background-size: contain;
+        display: block;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+
+
+    #app {
+        position: relative;
+        width: 90%;
+        height: 90%;
+        margin-top: 10%;
+      
+    }
+    .shlogo {
+        position: absolute;
+        width: 100%;
+        top: 0px;
+    }
+    .display {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 270px;
+        height: 105px;
+        border: 1px solid rgb(230, 189, 10);
+        border-radius: 10px;
+        text-align: center;
+        font-family: 'Kanit', sans-serif;
+        font-size: 2rem;
+        color: #D5AD6D;
+        margin: 20px auto;
+        background-image: url('../images/button/5.png');
+        background-position: center;
+        background-size: cover;
+    }
+
+    .goldtextcss {
+        color: #D5AD6D;
+        background: -webkit-linear-gradient(transparent, transparent),
+            -webkit-linear-gradient(top, rgba(213, 173, 109, 1) 0%, rgba(213, 173, 109, 1) 26%, rgba(226, 186, 120, 1) 35%, rgba(163, 126, 67, 1) 45%, rgba(145, 112, 59, 1) 61%, rgba(213, 173, 109, 1) 100%);
+        background: -o-linear-gradient(transparent, transparent);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .marker {
+        position: absolute;
+        width: 570px;
+        left: -85px;
+        top: -85px;
+        z-index: 2;
+    }
+
+    .wheel {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .button {
+        display: block;
+        cursor: pointer;
+        width: 200px;
+        margin: 10px auto;
+    }
+
+    .button:hover {
+        opacity: 0.5;
+    }
+
+    .blur {
+        animation: blur 10s;
+    }
+
+    @keyframes blur {
+        0% {
+            filter: blur(1.5px);
+        }
+
+        80% {
+            filter: blur(1.5px);
+        }
+
+        100% {
+            filter: blur(0px);
+        }
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+    body {
+        background-image: url('../images/login/mb_sp.jpg');
+        background-size: cover;
+        display: block;
+    }
+
+    .shlogo {
+        position: absolute;
+        width: 100%;
+        top: -250px;
+    }
+
+    #app {
+        width: 400px;
+        height: 400px;
+        margin: 50px auto;
+        margin-top: 50%;
+        position: relative;
+    }
+
+    .display {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 270px;
+        height: 105px;
+        border: 1px solid rgb(230, 189, 10);
+        border-radius: 10px;
+        text-align: center;
+        font-family: 'Kanit', sans-serif;
+        font-size: 2rem;
+        color: #D5AD6D;
+        margin: 20px auto;
+        background-image: url('../images/button/5.png');
+        background-position: center;
+        background-size: cover;
+    }
+
+    .goldtextcss {
+        color: #D5AD6D;
+        background: -webkit-linear-gradient(transparent, transparent),
+            -webkit-linear-gradient(top, rgba(213, 173, 109, 1) 0%, rgba(213, 173, 109, 1) 26%, rgba(226, 186, 120, 1) 35%, rgba(163, 126, 67, 1) 45%, rgba(145, 112, 59, 1) 61%, rgba(213, 173, 109, 1) 100%);
+        background: -o-linear-gradient(transparent, transparent);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .marker {
+        position: absolute;
+        width: 570px;
+        left: -85px;
+        top: -85px;
+        z-index: 2;
+    }
+
+    .wheel {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .button {
+        display: block;
+        cursor: pointer;
+        width: 200px;
+        margin: 10px auto;
+    }
+
+    .button:hover {
+        opacity: 0.5;
+    }
+
+    .blur {
+        animation: blur 10s;
+    }
+
+    @keyframes blur {
+        0% {
+            filter: blur(1.5px);
+        }
+
+        80% {
+            filter: blur(1.5px);
+        }
+
+        100% {
+            filter: blur(0px);
+        }
+    }
+
+
+
+}
+
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+    body {
+        background-image: url('../images/login/mb_sp.jpg');
+        background-size: cover;
+        display: block;
+    }
+
+    .shlogo {
+        position: absolute;
+        width: 100%;
+        top: -250px;
+    }
+
+    #app {
+        width: 400px;
+        height: 400px;
+        margin: 50px auto;
+        margin-top: 50%;
+        position: relative;
+    }
+
+    .display {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 270px;
+        height: 105px;
+        border: 1px solid rgb(230, 189, 10);
+        border-radius: 10px;
+        text-align: center;
+        font-family: 'Kanit', sans-serif;
+        font-size: 2rem;
+        color: #D5AD6D;
+        margin: 20px auto;
+        background-image: url('../images/button/5.png');
+        background-position: center;
+        background-size: cover;
+    }
+
+    .goldtextcss {
+        color: #D5AD6D;
+        background: -webkit-linear-gradient(transparent, transparent),
+            -webkit-linear-gradient(top, rgba(213, 173, 109, 1) 0%, rgba(213, 173, 109, 1) 26%, rgba(226, 186, 120, 1) 35%, rgba(163, 126, 67, 1) 45%, rgba(145, 112, 59, 1) 61%, rgba(213, 173, 109, 1) 100%);
+        background: -o-linear-gradient(transparent, transparent);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .marker {
+        position: absolute;
+        width: 570px;
+        left: -85px;
+        top: -85px;
+        z-index: 2;
+    }
+
+    .wheel {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .button {
+        display: block;
+        cursor: pointer;
+        width: 200px;
+        margin: 10px auto;
+    }
+
+    .button:hover {
+        opacity: 0.5;
+    }
+
+    .blur {
+        animation: blur 10s;
+    }
+
+    @keyframes blur {
+        0% {
+            filter: blur(1.5px);
+        }
+
+        80% {
+            filter: blur(1.5px);
+        }
+
+        100% {
+            filter: blur(0px);
+        }
+    }
+
+
+}
+
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    body {
+        background-image: url('../images/login/mb_sp.jpg');
+        background-size: cover;
+        display: block;
+    }
+
+    .shlogo {
+        position: absolute;
+        width: 100%;
+        top: -250px;
+    }
+
+    #app {
+        width: 400px;
+        height: 400px;
+        margin: 50px auto;
+        margin-top: 50%;
+        position: relative;
+    }
+
+    .display {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 270px;
+        height: 105px;
+        border: 1px solid rgb(230, 189, 10);
+        border-radius: 10px;
+        text-align: center;
+        font-family: 'Kanit', sans-serif;
+        font-size: 2rem;
+        color: #D5AD6D;
+        margin: 20px auto;
+        background-image: url('../images/button/5.png');
+        background-position: center;
+        background-size: cover;
+    }
+
+    .goldtextcss {
+        color: #D5AD6D;
+        background: -webkit-linear-gradient(transparent, transparent),
+            -webkit-linear-gradient(top, rgba(213, 173, 109, 1) 0%, rgba(213, 173, 109, 1) 26%, rgba(226, 186, 120, 1) 35%, rgba(163, 126, 67, 1) 45%, rgba(145, 112, 59, 1) 61%, rgba(213, 173, 109, 1) 100%);
+        background: -o-linear-gradient(transparent, transparent);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .marker {
+        position: absolute;
+        width: 570px;
+        left: -85px;
+        top: -85px;
+        z-index: 2;
+    }
+
+    .wheel {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .button {
+        display: block;
+        cursor: pointer;
+        width: 200px;
+        margin: 10px auto;
+    }
+
+    .button:hover {
+        opacity: 0.5;
+    }
+
+    .blur {
+        animation: blur 10s;
+    }
+
+    @keyframes blur {
+        0% {
+            filter: blur(1.5px);
+        }
+
+        80% {
+            filter: blur(1.5px);
+        }
+
+        100% {
+            filter: blur(0px);
+        }
+    }
+
+
+}
+
+
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    body {
+        background-image: url('../images/login/pc_sp.jpg');
+        background-size: cover;
+        display: block;
+    }
+
+    .shlogo {
+        position: absolute;
+        width: 100%;
+        top: -250px;
+    }
+
+    #app {
+        width: 400px;
+        height: 400px;
+        margin: 50px auto;
+        margin-top: 50%;
+        position: relative;
+    }
+
+    .display {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 270px;
+        height: 105px;
+        border: 1px solid rgb(230, 189, 10);
+        border-radius: 10px;
+        text-align: center;
+        font-family: 'Kanit', sans-serif;
+        font-size: 2rem;
+        color: #D5AD6D;
+        margin: 20px auto;
+        background-image: url('../images/button/5.png');
+        background-position: center;
+        background-size: cover;
+    }
+
+    .goldtextcss {
+        color: #D5AD6D;
+        background: -webkit-linear-gradient(transparent, transparent),
+            -webkit-linear-gradient(top, rgba(213, 173, 109, 1) 0%, rgba(213, 173, 109, 1) 26%, rgba(226, 186, 120, 1) 35%, rgba(163, 126, 67, 1) 45%, rgba(145, 112, 59, 1) 61%, rgba(213, 173, 109, 1) 100%);
+        background: -o-linear-gradient(transparent, transparent);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .marker {
+        position: absolute;
+        width: 570px;
+        left: -85px;
+        top: -85px;
+        z-index: 2;
+    }
+
+    .wheel {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .button {
+        display: block;
+        cursor: pointer;
+        width: 200px;
+        margin: 10px auto;
+    }
+
+    .button:hover {
+        opacity: 0.5;
+    }
+
+    .blur {
+        animation: blur 10s;
+    }
+
+    @keyframes blur {
+        0% {
+            filter: blur(1.5px);
+        }
+
+        80% {
+            filter: blur(1.5px);
+        }
+
+        100% {
+            filter: blur(0px);
+        }
+    }
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    body {
+        background-image: url('../images/login/mb_sp.jpg');
+        background-size: cover;
+        display: block;
+    }
+
+    .shlogo {
+        position: absolute;
+        width: 100%;
+        top: -250px;
+    }
+
+    #app {
+        width: 400px;
+        height: 400px;
+        margin: 50px auto;
+        margin-top: 50%;
+        position: relative;
+    }
+
+    .display {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 270px;
+        height: 105px;
+        border: 1px solid rgb(230, 189, 10);
+        border-radius: 10px;
+        text-align: center;
+        font-family: 'Kanit', sans-serif;
+        font-size: 2rem;
+        color: #D5AD6D;
+        margin: 20px auto;
+        background-image: url('../images/button/5.png');
+        background-position: center;
+        background-size: cover;
+    }
+
+    .goldtextcss {
+        color: #D5AD6D;
+        background: -webkit-linear-gradient(transparent, transparent),
+            -webkit-linear-gradient(top, rgba(213, 173, 109, 1) 0%, rgba(213, 173, 109, 1) 26%, rgba(226, 186, 120, 1) 35%, rgba(163, 126, 67, 1) 45%, rgba(145, 112, 59, 1) 61%, rgba(213, 173, 109, 1) 100%);
+        background: -o-linear-gradient(transparent, transparent);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .marker {
+        position: absolute;
+        width: 570px;
+        left: -85px;
+        top: -85px;
+        z-index: 2;
+    }
+
+    .wheel {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .button {
+        display: block;
+        cursor: pointer;
+        width: 200px;
+        margin: 10px auto;
+    }
+
+    .button:hover {
+        opacity: 0.5;
+    }
+
+    .blur {
+        animation: blur 10s;
+    }
+
+    @keyframes blur {
+        0% {
+            filter: blur(1.5px);
+        }
+
+        80% {
+            filter: blur(1.5px);
+        }
+
+        100% {
+            filter: blur(0px);
+        }
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+    body {
+        background-image: url('../images/login/pc_sp.jpg');
+        background-size: cover;
+        display: block;
+    }
+
+    .shlogo {
+        position: absolute;
+        width: 45%;
+        top: -20px;
+        left: 50%;
+    }
+
+    #app {
+        width: 90%;
+        height: 90%;
+        margin: 50px auto;
+        margin-top: 10%;
+        position: relative;
+        top: 12%;
+        left: 12%;
+    }
+
+    .display {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 270px;
+        height: 105px;
+        border: 1px solid rgb(230, 189, 10);
+        border-radius: 10px;
+        text-align: center;
+        font-family: 'Kanit', sans-serif;
+        font-size: 2rem;
+        color: #D5AD6D;
+        margin: 20px auto;
+        background-image: url('../images/button/5.png');
+        background-position: center;
+        background-size: cover;
+        margin-top: 55%;
+    }
+
+    .goldtextcss {
+        color: #D5AD6D;
+        background: -webkit-linear-gradient(transparent, transparent),
+            -webkit-linear-gradient(top, rgba(213, 173, 109, 1) 0%, rgba(213, 173, 109, 1) 26%, rgba(226, 186, 120, 1) 35%, rgba(163, 126, 67, 1) 45%, rgba(145, 112, 59, 1) 61%, rgba(213, 173, 109, 1) 100%);
+        background: -o-linear-gradient(transparent, transparent);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .marker {
+        position: absolute;
+        width: 125%;
+        left: -18%;
+        top: -20%;
+        z-index: 2;
+    }
+
+    .wheel {
+        position: relative;
+        width: 90%;
+        height: 90%;
+    }
+
+    .button {
+        cursor: pointer;
+        position: absolute;
+        
+        left: 50%;
+        top: -50%;
+        width: 40%;
+        background-image: url('../images/spin/spinbut.png');
+       
+        
+    }
+
+
+    .button:hover {
+        opacity: 0.5;
+    }
+
+    .blur {
+        animation: blur 10s;
+    }
+
+    @keyframes blur {
+        0% {
+            filter: blur(1.5px);
+        }
+
+        80% {
+            filter: blur(1.5px);
+        }
+
+        100% {
+            filter: blur(0px);
+        }
+    }
+
+
+
+
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+    body {
+        background-image: url('../images/login/pc_sp.jpg');
+        background-size: cover;
+        display: block;
+    }
+
+    .shlogo {
+        position: absolute;
+        width: 100%;
+        top: -200px;
+        left: 90%;
+    }
+
+    #app {
+        width: 90%;
+        height: 90%;
+        margin: 50px auto;
+        margin-top: 10%;
+        position: relative;
+    }
+
+    .display {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 270px;
+        height: 105px;
+        border: 1px solid rgb(230, 189, 10);
+        border-radius: 10px;
+        text-align: center;
+        font-family: 'Kanit', sans-serif;
+        font-size: 2rem;
+        color: #D5AD6D;
+        margin: 20px auto;
+        background-image: url('../images/button/5.png');
+        background-position: center;
+        background-size: cover;
+        margin-top: 50%;
+    }
+
+    .goldtextcss {
+        color: #D5AD6D;
+        background: -webkit-linear-gradient(transparent, transparent),
+            -webkit-linear-gradient(top, rgba(213, 173, 109, 1) 0%, rgba(213, 173, 109, 1) 26%, rgba(226, 186, 120, 1) 35%, rgba(163, 126, 67, 1) 45%, rgba(145, 112, 59, 1) 61%, rgba(213, 173, 109, 1) 100%);
+        background: -o-linear-gradient(transparent, transparent);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .marker {
+        position: absolute;
+        width: 145%;
+        left: -22%;
+        top: -22%;
+        z-index: 2;
+    }
+
+    .wheel {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .button {
+        display: block;
+        cursor: pointer;
+        width: 200px;
+        margin: 10px auto;
+
+    }
+
+    .button:hover {
+        opacity: 0.5;
+    }
+
+    .blur {
+        animation: blur 10s;
+    }
+
+    @keyframes blur {
+        0% {
+            filter: blur(1.5px);
+        }
+
+        80% {
+            filter: blur(1.5px);
+        }
+
+        100% {
+            filter: blur(0px);
+        }
+    }
+
+}
